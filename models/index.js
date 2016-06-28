@@ -31,7 +31,11 @@ var Hotel = db.define('hotel', {
     allowNull: false
   },
   num_stars: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
+    validate:{
+      min:0,
+      max:5
+    }
   },
   amenities: {
     type: Sequelize.TEXT
@@ -58,7 +62,11 @@ var Restaurant = db.define('restaurant', {
     allowNull: false
   },
   price: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
+    validate:{
+      min:0,
+      max:5
+    }
   }
 });
 

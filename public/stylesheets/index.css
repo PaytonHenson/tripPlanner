@@ -1,0 +1,8 @@
+div h1 {
+  font-weight: bold; }
+
+div {
+  float: left;
+  display: inline; }
+  div img {
+    display: block; }
